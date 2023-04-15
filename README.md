@@ -15,7 +15,7 @@ Using [lazy.nvim](https://github.com/folke/lazy.nvim):
 
 ```lua
 require("lazy").setup({
-  "neanias/everforest-nvim",
+  "8bitnikita/everforest-nvim",
   version = false,
   lazy = false,
   priority = 1000, -- make sure to load this before all the other start plugins
@@ -32,7 +32,7 @@ Using [packer.nvim](https://github.com/wbthomason/packer.nvim):
 
 ```lua
 use({
-  "neanias/everforest-nvim",
+  "8bitnikita/everforest-nvim",
   -- Optional; default configuration will be used if setup isn't called.
   config = function()
     require("everforest").setup()
@@ -43,7 +43,7 @@ use({
 Using [vim-plug](https://github.com/junegunn/vim-plug):
 
 ```viml
-Plug 'neanias/everforest-nvim', { 'branch': 'main' }
+Plug '8bitnikita/everforest-nvim', { 'branch': 'main' }
 ```
 
 ## Usage
