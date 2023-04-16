@@ -6,12 +6,6 @@ scheme.
 ![screenshot one](https://github.com/8bitnikita/everforest-nvim/raw/main/Screenshot%202023-04-15%20at%2013.15.49.png)
 ![screenshot two](https://github.com/8bitnikita/everforest-nvim/raw/main/Screenshot%202023-04-15%20at%2013.16.54.png)
 
-## Features
-
-- 100% Lua, supports Treesitter & LSP
-- Vim terminal colours
-- **Lualine** theme
-
 ## Installation
 
 Using [lazy.nvim](https://github.com/folke/lazy.nvim):
