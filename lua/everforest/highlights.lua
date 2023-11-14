@@ -1656,7 +1656,7 @@ highlights.generate_syntax = function(palette, options)
     javaScriptGlobal = { link = "Purple" },
     javaScriptMessage = { link = "Yellow" },
     -- javaScriptFunction = { link = "Keyword" },
-    javaScriptFunction = { link = "#ff0000"
+    javaScriptFunction = { link = "#ff0000"},
     javaScriptOperator = { link = "Orange" },
     javaScriptMember = { link = "Aqua" },
 
