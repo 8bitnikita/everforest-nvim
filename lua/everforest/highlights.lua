@@ -1872,10 +1872,10 @@ highlights.generate_syntax = function(palette, options)
   -- junegunn/fzf.vim
   vim.g.fzf_colors = {
     fg = { "fg", "Normal" },
-    bg = { "bg", "Purple" },
+    bg = { "bg", "Normal" },
     hl = { "fg", "Green" },
     ["fg+"] = { "fg", "CursorLine", "CursorColumn", "Normal" },
-    ["bg+"] = { "bg", "CursorLine", "CursorColumn" },
+    ["bg+"] = { "Green", "CursorLine", "CursorColumn" },
     ["hl+"] = { "fg", "Aqua" },
     info = { "fg", "Aqua" },
     border = { "fg", "Grey" },
