@@ -60,19 +60,19 @@ highlights.generate_syntax = function(palette, options)
     NormalNC = syntax_entry(palette.fg, colour_respecting_options(palette.bg0)),
     Terminal = syntax_entry(palette.fg, colour_respecting_options(palette.bg0)),
     EndOfBuffer = syntax_entry(palette.bg4, colour_respecting_options(palette.bg0)),
-    Folded = syntax_entry(palette.grey1, colour_respecting_options(palette.bg1)),
+    Folded = syntax_entry(palette.grey1, colour_respecting_options(palette.red)),
     SignColumn = syntax_entry(palette.fg, palette.none),
     FoldColumn = syntax_entry(palette.bg5, palette.none),
     ToolbarLine = syntax_entry(palette.fg, colour_respecting_options(palette.bg2)),
     IncSearch = syntax_entry(palette.bg0, palette.red),
     Search = syntax_entry(palette.bg0, palette.green),
-    ColorColumn = syntax_entry(palette.none, palette.bg1),
+    ColorColumn = syntax_entry(palette.none, palette.red),
     Conceal = syntax_entry(palette.bg5, palette.none),
     Cursor = syntax_entry(palette.none, palette.none, { styles.reverse }),
     lCursor = { link = "Cursor" },
     CursorIM = { link = "Cursor" },
-    CursorLine = syntax_entry(palette.none, palette.bg1),
-    CursorColumn = syntax_entry(palette.none, palette.bg1),
+    CursorLine = syntax_entry(palette.none, palette.red),
+    CursorColumn = syntax_entry(palette.none, palette.red),
     LineNr = syntax_entry(palette.bg5, palette.none),
     CursorLineNr = syntax_entry(palette.grey1, palette.none),
 
@@ -106,11 +106,11 @@ highlights.generate_syntax = function(palette, options)
     StatusLine = syntax_entry(palette.grey1, options.transparent_background_level == 2 and palette.none or palette.bg2),
     StatusLineTerm = syntax_entry(
       palette.grey1,
-      options.transparent_background_level == 2 and palette.none or palette.bg1
+      options.transparent_background_level == 2 and palette.none or palette.red
     ),
     StatusLineNC = syntax_entry(
       palette.grey1,
-      options.transparent_background_level == 2 and palette.none or palette.bg1
+      options.transparent_background_level == 2 and palette.none or palette.red
     ),
     StatusLineTermNC = syntax_entry(
       palette.grey1,
@@ -119,7 +119,7 @@ highlights.generate_syntax = function(palette, options)
     TabLine = syntax_entry(palette.grey2, palette.bg3),
     TabLineFill = syntax_entry(
       palette.grey1,
-      options.transparent_background_level == 2 and palette.none or palette.bg1
+      options.transparent_background_level == 2 and palette.none or palette.red
     ),
     TabLineSel = syntax_entry(palette.bg0, palette.statusline1),
     VertSplit = syntax_entry(palette.bg4, palette.none),
@@ -247,13 +247,13 @@ highlights.generate_syntax = function(palette, options)
     PurpleItalic = syntax_entry(palette.purple, palette.none, optional_italics),
 
     -- Related to `transparent_background` and `sign_column_background`
-    RedSign = syntax_entry(palette.red, colour_respecting_options(palette.bg1)),
-    OrangeSign = syntax_entry(palette.orange, colour_respecting_options(palette.bg1)),
-    YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.bg1)),
-    GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.bg1)),
-    AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.bg1)),
-    BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.bg1)),
-    PurpleSign = syntax_entry(palette.purple, colour_respecting_options(palette.bg1)),
+    RedSign = syntax_entry(palette.red, colour_respecting_options(palette.red)),
+    OrangeSign = syntax_entry(palette.orange, colour_respecting_options(palette.red)),
+    YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.red)),
+    GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.red)),
+    AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.red)),
+    BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.red)),
+    PurpleSign = syntax_entry(palette.purple, colour_respecting_options(palette.red)),
 
     -- Configuration based on `diagnostic_text_highlight` option
     ErrorText = syntax_entry(palette.none, palette.none, { styles.undercurl }, palette.red),
@@ -770,7 +770,7 @@ highlights.generate_syntax = function(palette, options)
 
     -- liuchengxu/vim-clap
     ClapSelected = syntax_entry(palette.red, palette.none, { styles.bold }),
-    ClapCurrentSelection = syntax_entry(palette.none, palette.bg1, { styles.bold }),
+    ClapCurrentSelection = syntax_entry(palette.none, palette.red, { styles.bold }),
     ClapSpinner = syntax_entry(palette.orange, palette.bg2, { styles.bold }),
     ClapBlines = syntax_entry(palette.fg, palette.none),
     ClapProviderId = syntax_entry(palette.fg, palette.none, { styles.bold }),
@@ -900,7 +900,7 @@ highlights.generate_syntax = function(palette, options)
     -- folke/which-key.nvim
     WhichKey = { link = "Red" },
     WhichKeyDesc = { link = "Blue" },
-    WhichKeyFloat = syntax_entry(palette.none, palette.bg1),
+    WhichKeyFloat = syntax_entry(palette.none, palette.red),
     WhichKeyGroup = { link = "Yellow" },
     WhichKeySeparator = { link = "Green" },
     WhichKeyValue = syntax_entry(palette.fg, palette.none),
@@ -1142,8 +1142,8 @@ highlights.generate_syntax = function(palette, options)
     MiniIndentscopePrefix = syntax_entry(palette.none, palette.none, { styles.nocombine }),
     MiniJump2dSpot = syntax_entry(palette.orange, palette.none, { styles.bold, styles.nocombine }),
     MiniStarterCurrent = syntax_entry(palette.none, palette.none, { styles.nocombine }),
-    MiniStatuslineDevinfo = syntax_entry(palette.grey1, palette.bg1),
-    MiniStatuslineFileinfo = syntax_entry(palette.grey1, palette.bg1),
+    MiniStatuslineDevinfo = syntax_entry(palette.grey1, palette.red),
+    MiniStatuslineFileinfo = syntax_entry(palette.grey1, palette.red),
     MiniStatuslineModeCommand = syntax_entry(palette.bg0, palette.aqua, { styles.bold }),
     MiniStatuslineModeInsert = syntax_entry(palette.bg0, palette.statusline2, { styles.bold }),
     MiniStatuslineModeNormal = syntax_entry(palette.bg0, palette.statusline1, { styles.bold }),
@@ -1471,18 +1471,18 @@ highlights.generate_syntax = function(palette, options)
     BufferLineIndicatorSelected = { link = "GreenSign" },
 
     -- petertriho/nvim-scrollbar
-    ScrollbarHandle = syntax_entry(palette.none, palette.bg1),
-    ScrollbarSearchHandle = syntax_entry(palette.orange, palette.bg1),
+    ScrollbarHandle = syntax_entry(palette.none, palette.red),
+    ScrollbarSearchHandle = syntax_entry(palette.orange, palette.red),
     ScrollbarSearch = syntax_entry(palette.orange, palette.none),
-    ScrollbarErrorHandle = syntax_entry(palette.red, palette.bg1),
+    ScrollbarErrorHandle = syntax_entry(palette.red, palette.red),
     ScrollbarError = syntax_entry(palette.red, palette.none),
-    ScrollbarWarnHandle = syntax_entry(palette.yellow, palette.bg1),
+    ScrollbarWarnHandle = syntax_entry(palette.yellow, palette.red),
     ScrollbarWarn = syntax_entry(palette.yellow, palette.none),
-    ScrollbarInfoHandle = syntax_entry(palette.green, palette.bg1),
+    ScrollbarInfoHandle = syntax_entry(palette.green, palette.red),
     ScrollbarInfo = syntax_entry(palette.green, palette.none),
-    ScrollbarHintHandle = syntax_entry(palette.blue, palette.bg1),
+    ScrollbarHintHandle = syntax_entry(palette.blue, palette.red),
     ScrollbarHint = syntax_entry(palette.blue, palette.none),
-    ScrollbarMiscHandle = syntax_entry(palette.purple, palette.bg1),
+    ScrollbarMiscHandle = syntax_entry(palette.purple, palette.red),
     ScrollbarMisc = syntax_entry(palette.purple, palette.none),
 
     -- gbprod/yanky.nvim
@@ -1819,7 +1819,7 @@ highlights.generate_syntax = function(palette, options)
 
   -- nathanaelkane/vim-indent-guides
   if vim.g.indent_guides_auto_colors == false then
-    syntax["IndentGuidesOdd"] = syntax_entry(palette.bg0, palette.bg1)
+    syntax["IndentGuidesOdd"] = syntax_entry(palette.bg0, palette.red)
     syntax["IndentGuidesEven"] = syntax_entry(palette.bg0, palette.bg2)
   end
 
