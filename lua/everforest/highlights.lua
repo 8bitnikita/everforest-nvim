@@ -252,7 +252,7 @@ highlights.generate_syntax = function(palette, options)
     YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.bg_dim)),
     GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.bg1)),
     AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.bg1)),
-    BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.purple)),
+    BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.bg_dim)),
     PurpleSign = syntax_entry(palette.purple, colour_respecting_options(palette.bg1)),
 
     -- Configuration based on `diagnostic_text_highlight` option
