@@ -975,7 +975,7 @@ highlights.generate_syntax = function(palette, options)
     TroubleCode = { link = "Grey" },
 
     -- nvim-telescope/telescope.nvim
-    TelescopeMatching = syntax_entry(palette.purple, palette.none, { styles.bold }),
+    TelescopeMatching = syntax_entry(palette.green, palette.none, { styles.bold }),
     TelescopeBorder = { link = "Grey" },
     TelescopePromptPrefix = { link = "Orange" },
     TelescopeSelection = { link = "DiffAdd" },
@@ -1872,7 +1872,7 @@ highlights.generate_syntax = function(palette, options)
   -- junegunn/fzf.vim
   vim.g.fzf_colors = {
     fg = { "fg", "Normal" },
-    bg = { "bg", "Normal" },
+    bg = { "bg", "Purple" },
     hl = { "fg", "Green" },
     ["fg+"] = { "fg", "CursorLine", "CursorColumn", "Normal" },
     ["bg+"] = { "bg", "CursorLine", "CursorColumn" },
