@@ -71,8 +71,8 @@ highlights.generate_syntax = function(palette, options)
     Cursor = syntax_entry(palette.none, palette.none, { styles.reverse }),
     lCursor = { link = "Cursor" },
     CursorIM = { link = "Cursor" },
-    CursorLine = syntax_entry(palette.none, palette.purple),
-    CursorColumn = syntax_entry(palette.none, palette.purple),
+    CursorLine = syntax_entry(palette.none, palette.bg1),
+    CursorColumn = syntax_entry(palette.none, palette.bg1),
     LineNr = syntax_entry(palette.bg5, palette.none),
     CursorLineNr = syntax_entry(palette.grey1, palette.none),
 
@@ -106,11 +106,11 @@ highlights.generate_syntax = function(palette, options)
     StatusLine = syntax_entry(palette.grey1, options.transparent_background_level == 2 and palette.none or palette.bg2),
     StatusLineTerm = syntax_entry(
       palette.grey1,
-      options.transparent_background_level == 2 and palette.none or palette.bg1
+      options.transparent_background_level == 2 and palette.none or palette.purple
     ),
     StatusLineNC = syntax_entry(
       palette.grey1,
-      options.transparent_background_level == 2 and palette.none or palette.bg1
+      options.transparent_background_level == 2 and palette.none or palette.purple
     ),
     StatusLineTermNC = syntax_entry(
       palette.grey1,
@@ -119,7 +119,7 @@ highlights.generate_syntax = function(palette, options)
     TabLine = syntax_entry(palette.grey2, palette.bg3),
     TabLineFill = syntax_entry(
       palette.grey1,
-      options.transparent_background_level == 2 and palette.none or palette.bg1
+      options.transparent_background_level == 2 and palette.none or palette.purple
     ),
     TabLineSel = syntax_entry(palette.bg0, palette.statusline1),
     VertSplit = syntax_entry(palette.bg4, palette.none),
