@@ -76,7 +76,7 @@ highlights.generate_syntax = function(palette, options)
     LineNr = syntax_entry(palette.bg5, palette.none),
     CursorLineNr = syntax_entry(palette.grey1, palette.none),
 
-    DiffAdd = syntax_entry(palette.none, palette.bg_green),
+    DiffAdd = syntax_entry(palette.none, palette.purple),
     DiffChange = syntax_entry(palette.none, palette.bg_blue),
     DiffDelete = syntax_entry(palette.none, palette.bg_red),
     DiffText = syntax_entry(palette.bg0, palette.blue),
