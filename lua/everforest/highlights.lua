@@ -975,7 +975,7 @@ highlights.generate_syntax = function(palette, options)
     TroubleCode = { link = "Grey" },
 
     -- nvim-telescope/telescope.nvim
-    TelescopeMatching = syntax_entry(palette.orange, palette.none, { styles.bold }),
+    TelescopeMatching = syntax_entry(palette.orange, palette.green, { styles.bold }),
     TelescopeBorder = { link = "Grey" },
     TelescopePromptPrefix = { link = "Orange" },
     TelescopeSelection = { link = "DiffAdd" },
