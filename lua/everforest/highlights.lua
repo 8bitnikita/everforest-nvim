@@ -247,8 +247,8 @@ highlights.generate_syntax = function(palette, options)
     PurpleItalic = syntax_entry(palette.purple, palette.none, optional_italics),
 
     -- Related to `transparent_background` and `sign_column_background`
-    RedSign = syntax_entry(palette.red, colour_respecting_options(palette.purple)),
-    OrangeSign = syntax_entry(palette.orange, colour_respecting_options(palette.bg1)),
+    RedSign = syntax_entry(palette.red, colour_respecting_options(palette.bg1)),
+    OrangeSign = syntax_entry(palette.orange, colour_respecting_options(palette.purple)),
     YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.bg1)),
     GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.bg1)),
     AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.bg1)),
