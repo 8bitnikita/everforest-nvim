@@ -250,8 +250,8 @@ highlights.generate_syntax = function(palette, options)
     RedSign = syntax_entry(palette.red, colour_respecting_options(palette.bg1)),
     OrangeSign = syntax_entry(palette.orange, colour_respecting_options(palette.bg1)),
     YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.bg_dim)),
-    GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.purple)),
-    AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.bg1)),
+    GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.bg1)),
+    AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.purple)),
     BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.bg1)),
     PurpleSign = syntax_entry(palette.purple, colour_respecting_options(palette.bg1)),
 
