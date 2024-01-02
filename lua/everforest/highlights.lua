@@ -95,7 +95,7 @@ highlights.generate_syntax = function(palette, options)
     WildMenu = { link = "PmenuSel" },
     PmenuThumb = syntax_entry(palette.none, palette.grey0),
     NormalFloat = syntax_entry(palette.fg, palette.none),
-    FloatBorder = syntax_entry(palette.grey1, palette.none),
+    FloatBorder = syntax_entry(palette.fg, palette.none),
     Question = syntax_entry(palette.yellow, palette.none),
 
     SpellBad = syntax_entry(palette.none, palette.none, { styles.undercurl }, palette.red),
