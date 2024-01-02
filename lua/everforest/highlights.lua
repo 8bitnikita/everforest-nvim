@@ -89,7 +89,7 @@ highlights.generate_syntax = function(palette, options)
     NonText = syntax_entry(palette.bg4, palette.none),
     Whitespace = syntax_entry(palette.bg4, palette.none),
     SpecialKey = syntax_entry(palette.bg3, palette.none),
-    Pmenu = syntax_entry(palette.fg, palette.red),
+    Pmenu = syntax_entry(palette.fg, palette.bg2),
     PmenuSbar = syntax_entry(palette.none, palette.red),
     PmenuSel = syntax_entry(palette.bg0, palette.statusline1),
     WildMenu = { link = "PmenuSel" },
