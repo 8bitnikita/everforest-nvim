@@ -96,7 +96,7 @@ highlights.generate_syntax = function(palette, options)
     PmenuThumb = syntax_entry(palette.none, palette.grey0),
     NormalFloat = syntax_entry(palette.fg, palette.bg2),
     FloatBorder = syntax_entry(palette.grey1, palette.bg2),
-    Question = syntax_entry(palette.yellow, palette.bg2),
+    Question = syntax_entry(palette.yellow, palette.none),
 
     SpellBad = syntax_entry(palette.none, palette.none, { styles.undercurl }, palette.red),
     SpellCap = syntax_entry(palette.none, palette.none, { styles.undercurl }, palette.blue),
