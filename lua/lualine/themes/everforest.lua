@@ -7,40 +7,58 @@ else
   palette = palettes.light
 end
 
+local colors = {
+  -- gray       = '#343F44',
+  gray = "#3D484E",
+  light_gray = "#8B998F",
+  orange = "#ff9640",
+  purple = "#D88FDF",
+  red = "#ec5f67",
+  yellow = "#EBBB5C",
+  blue = "#61B8AD",
+  green = "#93C570",
+  white = "#C3C3C4",
+  black = "#2E353B",
+  dark = "#363F45",
+  dark_light = "#424D55",
+  bg = "#4F5960",
+}
+
 return {
   normal = {
-    a = { bg = palette.statusline1, fg = palette.bg0, gui = "bold" },
-    b = { bg = palette.bg3, fg = palette.grey2 },
-    c = { bg = palette.bg1, fg = palette.grey1 },
+    a = { bg = colors.green, fg = colors.black, gui = "bold" },
+    b = { bg = colors.bg, fg = colors.green },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
   insert = {
-    a = { bg = palette.statusline2, fg = palette.bg0, gui = "bold" },
-    b = { bg = palette.bg3, fg = palette.fg },
-    c = { bg = palette.bg1, fg = palette.fg },
+    a = { bg = colors.blue, fg = colors.black, gui = "bold" },
+    b = { bg = colors.bg, fg = colors.blue },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
   visual = {
-    a = { bg = palette.statusline3, fg = palette.bg0, gui = "bold" },
-    b = { bg = palette.bg3, fg = palette.fg },
-    c = { bg = palette.bg1, fg = palette.fg },
+    a = { bg = colors.purple, fg = colors.black, gui = "bold" },
+    b = { bg = colors.bg, fg = colors.purple },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
   replace = {
-    a = { bg = palette.orange, fg = palette.bg0, gui = "bold" },
-    b = { bg = palette.bg3, fg = palette.fg },
-    c = { bg = palette.bg1, fg = palette.fg },
+    a = { bg = colors.red, fg = colors.black, gui = "bold" },
+    b = { bg = colors.bg, fg = colors.red },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
   command = {
-    a = { bg = palette.aqua, fg = palette.bg0, gui = "bold" },
-    b = { bg = palette.bg3, fg = palette.fg },
-    c = { bg = palette.bg1, fg = palette.fg },
+    a = { bg = colors.yellow, fg = colors.black, gui = "bold" },
+    b = { bg = colors.bg, fg = colors.yellow },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
   terminal = {
-    a = { bg = palette.purple, fg = palette.bg0, gui = "bold" },
-    b = { bg = palette.bg3, fg = palette.fg },
-    c = { bg = palette.bg1, fg = palette.fg },
+    a = { bg = colors.white, fg = colors.black, gui = "bold" },
+    b = { bg = colors.bg, fg = colors.white },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
+
   inactive = {
-    a = { bg = palette.bg1, fg = palette.grey1 },
-    b = { bg = palette.bg1, fg = palette.grey1 },
-    c = { bg = palette.bg1, fg = palette.grey1 },
+    a = { bg = colors.gray, fg = colors.white, gui = "bold" },
+    b = { bg = colors.gray, fg = colors.white },
+    c = { bg = colors.gray, fg = colors.light_gray },
   },
 }
