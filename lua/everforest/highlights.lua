@@ -76,7 +76,7 @@ highlights.generate_syntax = function(palette, options)
     LineNr = syntax_entry(palette.bg5, palette.none),
     CursorLineNr = syntax_entry(palette.grey1, palette.none),
 
-    DiffAdd = syntax_entry(palette.none, palette.bg_green),
+    DiffAdd = syntax_entry(palette.none, palette.bg1),
     DiffChange = syntax_entry(palette.none, palette.bg_blue),
     DiffDelete = syntax_entry(palette.none, palette.bg_red),
     DiffText = syntax_entry(palette.bg0, palette.blue),
@@ -94,9 +94,9 @@ highlights.generate_syntax = function(palette, options)
     PmenuSel = syntax_entry(palette.bg0, palette.statusline1),
     WildMenu = { link = "PmenuSel" },
     PmenuThumb = syntax_entry(palette.none, palette.grey0),
-    NormalFloat = syntax_entry(palette.fg, palette.bg2),
-    FloatBorder = syntax_entry(palette.grey1, palette.bg2),
-    Question = syntax_entry(palette.yellow, palette.none),
+    NormalFloat = syntax_entry(palette.fg, palette.none),
+    FloatBorder = syntax_entry(palette.grey1, palette.none),
+    Question = syntax_entry(palette.yellow, palette.bg2),
 
     SpellBad = syntax_entry(palette.none, palette.none, { styles.undercurl }, palette.red),
     SpellCap = syntax_entry(palette.none, palette.none, { styles.undercurl }, palette.blue),
@@ -249,10 +249,10 @@ highlights.generate_syntax = function(palette, options)
     -- Related to `transparent_background` and `sign_column_background`
     RedSign = syntax_entry(palette.red, colour_respecting_options(palette.bg1)),
     OrangeSign = syntax_entry(palette.orange, colour_respecting_options(palette.bg1)),
-    YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.bg1)),
+    YellowSign = syntax_entry(palette.yellow, colour_respecting_options(palette.none)),
     GreenSign = syntax_entry(palette.green, colour_respecting_options(palette.bg1)),
     AquaSign = syntax_entry(palette.aqua, colour_respecting_options(palette.bg1)),
-    BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.bg1)),
+    BlueSign = syntax_entry(palette.blue, colour_respecting_options(palette.none)),
     PurpleSign = syntax_entry(palette.purple, colour_respecting_options(palette.bg1)),
 
     -- Configuration based on `diagnostic_text_highlight` option
@@ -975,7 +975,7 @@ highlights.generate_syntax = function(palette, options)
     TroubleCode = { link = "Grey" },
 
     -- nvim-telescope/telescope.nvim
-    TelescopeMatching = syntax_entry(palette.green, palette.none, { styles.bold }),
+    TelescopeMatching = syntax_entry(palette.orange, palette.none, { styles.bold }),
     TelescopeBorder = { link = "Grey" },
     TelescopePromptPrefix = { link = "Orange" },
     TelescopeSelection = { link = "DiffAdd" },
