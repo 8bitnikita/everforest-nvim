@@ -343,7 +343,7 @@ highlights.generate_syntax = function(palette, options)
     TSParameterReference = { link = "Fg" },
     TSPreProc = { link = "PreProc" },
     TSProperty = { link = "Blue" },
-    TSPunctBracket = { link = "Red" },
+    TSPunctBracket = { link = "Orange" },
     TSPunctDelimiter = { link = "Grey" },
     TSPunctSpecial = { link = "Blue" },
     TSRepeat = { link = "Red" },
