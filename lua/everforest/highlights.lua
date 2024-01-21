@@ -343,7 +343,7 @@ highlights.generate_syntax = function(palette, options)
     TSParameterReference = { link = "Fg" },
     TSPreProc = { link = "PreProc" },
     TSProperty = { link = "Blue" },
-    TSPunctBracket = { link = "Orange" },
+    TSPunctBracket = { link = "Fg" },
     TSPunctDelimiter = { link = "Grey" },
     TSPunctSpecial = { link = "Blue" },
     TSRepeat = { link = "Red" },
@@ -1655,7 +1655,7 @@ highlights.generate_syntax = function(palette, options)
     javaScriptIdentifier = { link = "Orange" },
     javaScriptGlobal = { link = "Purple" },
     javaScriptMessage = { link = "Yellow" },
-    javaScriptFunction = { link = "Keyword" },
+    javaScriptFunction = { link = "Red" },
     javaScriptOperator = { link = "Orange" },
     javaScriptMember = { link = "Aqua" },
 
