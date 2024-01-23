@@ -8,8 +8,8 @@ else
 end
 
 local colors = {
-  -- gray       = '#343F44',
-  gray = "#3D484E",
+  gray = "#343F44",
+  -- gray = "#3D484E",
   light_gray = "#8B998F",
   orange = "#ff9640",
   purple = "#D88FDF",
