@@ -22,7 +22,8 @@ local colors = {
   dark = "#363F45",
   dark_light = "#424D55",
   -- bg = "#4F5960",
-  bg = "#3E464C",
+  -- bg = "#3E464C",
+  bg = "#57626A",
 }
 
 return {
