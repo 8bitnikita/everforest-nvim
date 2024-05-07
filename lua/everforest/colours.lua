@@ -117,6 +117,7 @@ local base_palette = {
     orange = "#E6926C",
     yellow = "#E3B965",
     -- green = "#A5C279",
+    -- green = "#ABD170",
     green = "#A0C960",
     aqua = "#6DBA80",
     blue = "#61B8AD",
