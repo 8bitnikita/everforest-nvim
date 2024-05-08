@@ -112,12 +112,10 @@ local base_palette = {
     none = "NONE",
   },
   dark = {
-    -- fg = "#9FBDBF", --done
-    yellow = "#9FBDBF", --done
+    fg = "#E1C891", --done
     red = "#EE6060", --done
     orange = "#F38E61", --done
-    -- yellow = "#EFBD58", --done
-    fg = "#EFBD58", --done
+    yellow = "#EFBD58", --done
     green = "#A9CD73", --done
     aqua = "#69CA81", --done
     blue = "#4DC5B6", --done
