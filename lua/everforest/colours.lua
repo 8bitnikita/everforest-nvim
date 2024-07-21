@@ -33,7 +33,7 @@ local hard_background = {
 
 local medium_background = {
   dark = {
-    bg_dim = "#2d353b",
+    bg_dim = "#282E34",
     bg0 = "#282E34",
     bg1 = "#343f44",
     bg2 = "#3d484d",
